@@ -28,7 +28,8 @@ public class Aplicacao {
 		int numeroNovo;
 
 		/**
-		 * Número escolhido para relizar a sequência de fibonacci.
+		 * Quantidade de vezes que será realizado o processo para realização da
+		 * sequência de fibonacci
 		 */
 		int numeroFibonacci;
 
@@ -43,7 +44,7 @@ public class Aplicacao {
 		 */
 		numeroFibonacci = Integer
 				.parseInt(JOptionPane
-						.showInputDialog("Informe quantos números serão usados na sequência de fibonacci: "));
+						.showInputDialog("Informe quantas vezes será realizada a sequência de fibonacci: "));
 
 		// Realiza a lógica do cálculo da sequência de fibonacci.
 		for (int i = 2; i <= numeroFibonacci; i++) {
@@ -57,5 +58,5 @@ public class Aplicacao {
 		// Apresenta ao usuário a sequência de fibonacci.
 		JOptionPane.showMessageDialog(null, "Os números Fibonacci são: \n"
 				+ mensagem);
-		}
+	}
 }
